@@ -6,12 +6,12 @@ table = [[0, 0, 0],
 hist = [0, 0, 0]
 hand = {0 => "Rock", 1 => "Scissors", 2 => "Paper"}
 
-M = 0
+m = 0
 
 while 1
-	if table[M][0]>table[M][1] && table[M][0]>table[M][2]
+	if table[m][0]>table[m][1] && table[m][0]>table[m][2]
 		computer = 2
-	elsif table[M][1]>table[M][2]
+	elsif table[m][1]>table[m][2]
 		computer = 0
 	else
 		computer = 1 
@@ -35,8 +35,8 @@ while 1
 	end
 
 	hist[judge] += 1
-	table[M][player] += 1
-	M = player
+	table[m][player] += 1
+	m = player
 
 	#unasuke help
 	puts hist[1]
